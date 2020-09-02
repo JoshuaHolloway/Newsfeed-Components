@@ -8,20 +8,10 @@ gsap.to('.logo', {
     x: 300
 });
 
-const menu = document.querySelector('.menu-button');
-console.log(menu);
-menu.addEventListener('click', (event) => {
+const hamburger = document.querySelector('.menu-button');
+const side_nav = document.querySelector('.Side-Nav');
 
+hamburger.addEventListener('click', (event) => {
     console.log('menu clicked');
-
-    document.getElementById('Side-Menu').style.width = '250px';
-
-});
-
-const button_close_sideMenu = document.querySelector('.Btn-Close');
-button_close_sideMenu.addEventListener('click', (event) => {
-
-    console.log('.Btn-Close pressed');
-
-    document.getElementById('Side-Menu').style.width = '0px';
+    side_nav.classList.toggle('Side-Menu_open');
 });
