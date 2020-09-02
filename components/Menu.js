@@ -25,7 +25,7 @@ const menuMaker = (data) => {
     // The 'menuMaker' takes an array of menu items as its only argument.
 
     const div = ce('div');
-    div.classList.add('menu');
+    // div.classList.add('menu');
 
     const ul = ce('ul');
     div.appendChild(ul);
@@ -65,12 +65,7 @@ const menuMaker = (data) => {
 /*
   Step 6: Use 'menuMaker' to create a menu using the 'menuItems' array, and append the returned menu to the header.
 */
-console.log('josh');
 const menu = menuMaker(menuItems);
 
 const header = qs('div.header');
 header.appendChild(menu);
-
-
-console.log(menu);
-// console.log(menuMaker(menuItems));
