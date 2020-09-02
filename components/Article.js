@@ -9,8 +9,7 @@ print(data);
 
 /*
   Step 1: Write a component called 'articleMaker' to create an article.
-  Your component is a function that takes an article object as its only argument,
-  and returns a DOM node looking like the one below:
+  Your component is a function that takes an article object as its only argument, and returns a DOM node looking like the one below:
 
   <div class="article">
     <h2>{title of the article}</h2>
@@ -84,7 +83,7 @@ const mapped = data.map((elem) => {
   articles_div.appendChild(article);
   return 'foo';
 });
-print(mapped);
+console.log(mapped);
 
 
 
