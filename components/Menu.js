@@ -67,5 +67,10 @@ const menuMaker = (data) => {
 */
 console.log('josh');
 const menu = menuMaker(menuItems);
+
+const header = qs('div.header');
+header.appendChild(menu);
+
+
 console.log(menu);
 // console.log(menuMaker(menuItems));
