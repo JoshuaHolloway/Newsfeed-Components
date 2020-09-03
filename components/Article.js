@@ -54,7 +54,7 @@ const articleMaker = (datum) => {
     This listener should toggle the class 'article-open' on div.article.
   */
   span.addEventListener('click', () => {
-    span.classList.toggle('article-open');
+    div.classList.toggle('article-open');
   });
 
   /* Step 3: Don't forget to return something from your function */
@@ -84,10 +84,3 @@ const mapped = data.map((elem) => {
   return 'foo';
 });
 console.log(mapped);
-
-
-
-/*
-  Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
-  Refresh the page to see the new article.
-*/
