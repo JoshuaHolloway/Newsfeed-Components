@@ -1,11 +1,8 @@
 // OPTIONAL: if you're feeling adventurous, try to make the data an export from a different module, and import it here.
 // You can read about ES6 modules here: https://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules
 import { data } from './Article-data.js';
-const print = x => console.log(x);
 const ce = x => document.createElement(x);
 const qs = x => document.querySelector(x);
-print('Article.js');
-print(data);
 
 
 /*
@@ -86,9 +83,7 @@ const articleMaker = (datum) => {
 // to create a div.article element and append it to the DOM inside div.articles (see index.html).
 const articles_div = qs('.articles');
 const mapped = data.map((elem) => {
-  console.log('hello');
   const article = articleMaker(elem);
   articles_div.appendChild(article);
   return 'foo';
 });
-console.log(mapped);
