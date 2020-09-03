@@ -1,7 +1,7 @@
 const tl = gsap.timeline();
 
 tl.from('.logo', {
-    duration: 1,
+    duration: 0.5,
     opacity: 0,
     scale: 0.3,
     ease: 'back'
