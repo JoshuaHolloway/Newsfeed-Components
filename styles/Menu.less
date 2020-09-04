@@ -4,18 +4,26 @@
   cursor: pointer;
 }
 
+:root {
+  --width: 350px;
+}
+
 .menu {
-  display: none;
+  // display: none;
   position: fixed;
   top: 75px;
   left: 0;
-  width: 350px;
+  width: 0; /* Initially collapsed */
+  transition: 0.6s ease;
+
   height: 100vh; /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: #81C784;
   border: 1px solid #004D40;
   border-left: none;
   border-bottom: none;
   z-index: 2; /* This set the layer level of the element, it has precendence over initial level of 1*/
+
+  
 }
 
 .menu ul li{
@@ -27,4 +35,33 @@
 
 .menu--open {
   display: block;
+  width: var(--width);
 }
+
+// ========================================
+// GSAP:
+.logo {
+  height: 100%;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid red 5px;
+    width: 15%;
+    height: 100%;
+}
+
+.Circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: red;
+}
+
+#Circle-1 { background: #3cba54;}
+#Circle-2 { background: #f4c20d;}
+#Circle-3 { background: #db3236;}
+#Circle-4 { background: #4885ed;}
+#Circle-5 { background: #3cba54;}
