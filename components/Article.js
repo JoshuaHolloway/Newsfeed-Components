@@ -1,8 +1,22 @@
-// OPTIONAL: if you're feeling adventurous, try to make the data an export from a different module, and import it here.
-// You can read about ES6 modules here: https://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules
-import { data } from './Article-data.js';
+import data from './ArticleData.js';
+const p = x => console.log(x);
 const ce = x => document.createElement(x);
 const qs = x => document.querySelector(x);
+const el = (x, e, f) => x.addEventListener(e, f);
+
+p(data);
+
+const comp = (type, className='', content='', event='', callback=null) => {
+  const elem = ce(type);
+  if (className)
+    elem.classList.add(className);
+  elem.textContent = content;
+
+  if (event)
+    el(elem, event, callback);
+
+  return elem;
+};
 
 
 /*
@@ -18,48 +32,22 @@ const qs = x => document.querySelector(x);
 
     <span class="expandButton">+</span>
   </div>
-
-  Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
-  This listener should toggle the class 'article-open' on div.article.
-
-  Step 3: Don't forget to return something from your function!
 */
 const articleMaker = (datum) => {
 
-
-  const div = ce('div');
-  div.classList.add('article');
-
-
-  const h2 = ce('h2');
-  h2.textContent = datum.title;
-
-
-  const p0 = ce('p');
-  p0.classList.add('date');
-  p0.textContent = datum.date;
-
-  const p1 = ce('p');
-  p1.textContent = datum.firstParagraph;
-
-  const p2 = ce('p');
-  p2.textContent = datum.secondParagraph;
+  const div = comp('div', 'article');
+  const h2 = comp('h2', '', datum.title);
+  const p0 = comp('p', 'date', datum.date);
+  const p1 = comp('p', '', datum.firstParagraph);
+  const p2 = comp('p', '', datum.secondParagraph); 
+  const p3 = comp('p', '', datum.thirdParagraph);
   
-  const p3 = ce('p');
-  p3.textContent = datum.thirdParagraph;  
-
-
-  const span = ce('span');
-  span.classList.add('expandButton');
-  span.textContent = '+';
-
   /*
     Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
     This listener should toggle the class 'article-open' on div.article.
   */
-  span.addEventListener('click', () => {
-    div.classList.toggle('article-open');
-  });
+  const span = comp('span', 'expandButton', '+', 'click', 
+                    () => div.classList.toggle('article-open'));
 
   /* Step 3: Don't forget to return something from your function */
   // <div class="article">
@@ -78,12 +66,16 @@ const articleMaker = (datum) => {
 
 
 
-
-// Step 4: Outside your function now, loop over the data. At each iteration you'll use your component
-// to create a div.article element and append it to the DOM inside div.articles (see index.html).
+/*
+  Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
+  Refresh the page to see the new article.
+*/
+ 
+//  Step 4: Outside your function now, loop over the data. At each iteration you'll use your component
+//  to create a div.article element and append it to the DOM inside div.articles (see index.html).
 const articles_div = qs('.articles');
 const mapped = data.map((elem) => {
+  console.log('hello');
   const article = articleMaker(elem);
   articles_div.appendChild(article);
-  return 'foo';
 });

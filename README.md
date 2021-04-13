@@ -14,7 +14,6 @@ In this project we are going to be building a news feed reader. The goal is to h
 **Follow these steps to set up and work on your project:**
 
 * [ ] Create a forked copy of this project.
-* [ ] Add your team lead as collaborator on Github.
 * [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
 * [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 * [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
@@ -23,8 +22,6 @@ In this project we are going to be building a news feed reader. The goal is to h
 **Follow these steps for completing your project.**
 
 * [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
-* [ ] Add your team lead as a reviewer on the pull-request.
-* [ ] Your team lead will count the project as complete by merging the branch back into `main` branch.
 
 ### Launching the project
 
@@ -44,12 +41,6 @@ In this project we are going to be building a news feed reader. The goal is to h
 ### Part 3: The Menu
 
 * Follow the instructions found in the Menu.js file to complete the JavaScript functionality.
-
-### Part 4: Exit Ticket
-
-Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/wJnnCcg7nzMWbuptD/uZmuwFasNH3WoC).
-
-The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references.
 
 ### Stretch Goals
 
