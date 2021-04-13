@@ -1,5 +1,3 @@
-# (Josh)
-
 # Newsfeed-Components
 
 In this project we are going to be building a news feed reader. The goal is to have a collapsing menu, and expandable news articles. The styles and some of the HTML is already done for you.
@@ -16,7 +14,6 @@ In this project we are going to be building a news feed reader. The goal is to h
 **Follow these steps to set up and work on your project:**
 
 * [ ] Create a forked copy of this project.
-* [ ] Add your team lead as collaborator on Github.
 * [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
 * [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 * [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
@@ -25,8 +22,6 @@ In this project we are going to be building a news feed reader. The goal is to h
 **Follow these steps for completing your project.**
 
 * [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
-* [ ] Add your team lead as a reviewer on the pull-request.
-* [ ] Your team lead will count the project as complete by merging the branch back into `main` branch.
 
 ### Launching the project
 
@@ -46,12 +41,6 @@ In this project we are going to be building a news feed reader. The goal is to h
 ### Part 3: The Menu
 
 * Follow the instructions found in the Menu.js file to complete the JavaScript functionality.
-
-### Part 4: Exit Ticket
-
-Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/wJnnCcg7nzMWbuptD/uZmuwFasNH3WoC).
-
-The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references.
 
 ### Stretch Goals
 
@@ -74,10 +63,10 @@ A few things to check out:
 * Greensock Animation Platform, is by far the most powerful of the three. It is intuitive and easy to use, and you will be amazed at the results.
 * https://greensock.com/gsap
 
-* Animation Goal #1:
-  * Animate the menu opening: You will need to change the CSS for the menu in order to achieve this. Get the menu to slide in from the left side of the screen. And slide out when the button is clicked. Bonus: Get the menu to slide back out when the user clicks anywhere on the screen other than the menu.
-* Animation Goal #2:
-  * Animate the article opening. This one is a bit trickier. You will need to change the CSS for this component as well. Animate the component so that it slides open and slides closed on each click. Update the text in the expand button to read `'Click to Expand'` or `'Click to Close'` depending on the state of the article.
+Note: Just a reminder the stretch goals are just extra practice using the tools we have learned. These are not required. Only parts 1-3 are required portions of the project. If you do not get to the stretch goals, don't worry.
+
+* Animation Goal #1. Animate the menu opening: You will need to change the CSS for the menu in order to achieve this. Get the menu to slide in from the left side of the screen. And slide out when the button is clicked. Bonus: Get the menu to slide back out when the user clicks anywhere on the screen other than the menu.
+* Animation Goal #2 Animate the article opening. This one is a bit trickier. You will need to change the CSS for this component as well. Animate the component so that it slides open and slides closed on each click. Update the text in the expand button to read `'Click to Expand'` or `'Click to Close'` depending on the state of the article.
 
 * Close Button
 
