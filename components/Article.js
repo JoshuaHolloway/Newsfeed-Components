@@ -18,6 +18,7 @@ const comp = (type, className='', content='', event='', callback=null) => {
   return elem;
 };
 
+
 /*
   Step 1: Write a component called 'articleMaker' to create an article.
   Your component is a function that takes an article object as its only argument,
@@ -66,11 +67,6 @@ const articleMaker = (datum) => {
 
 
 /*
-  Step 2: Still inside `articleMaker`, add an event listener to the span.expandButton.
-  This listener should toggle the class 'article-open' on div.article.
-
-  Step 3: Don't forget to return something from your function!
-
   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
